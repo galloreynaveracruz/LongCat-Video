@@ -1,103 +1,116 @@
 ---
 name: ig-carousel
 description: >-
-  Build an Instagram carousel - the cover that earns the swipe, slide-by-slide
-  copy, and the 1080x1350 files to upload. Use when the user says "carousel",
-  "slides", "swipe post", "turn this into a carousel", or has a list-shaped or
-  step-shaped idea that would die as a single image.
+  Arma un carrusel de Instagram: la portada que se gana el deslizar, el texto
+  diapositiva por diapositiva y los archivos de 1080x1350 para subir. Úsalo
+  cuando el usuario diga "carrusel", "diapositivas", "slides", "post para
+  deslizar", "conviértelo en carrusel", o tenga una idea en forma de lista o de
+  pasos que se moriría como imagen sola.
 ---
 
 # ig-carousel
 
-Carousels are the highest-dwell format on the grid, because a swipe is an
-interaction and a scroll is not. They also get a second chance: Instagram can
-show a carousel again starting from a later slide to someone who did not engage
-the first time, so slide two has to stand on its own as well.
+Los carruseles son el formato del grid donde la gente se queda más tiempo,
+porque deslizar es una interacción y hacer scroll no. Además tienen una segunda
+oportunidad: Instagram puede volver a mostrar un carrusel a partir de una
+diapositiva posterior a alguien que no interactuó la primera vez, así que la
+diapositiva dos también tiene que sostenerse sola.
 
-The format rewards one idea broken into steps. It punishes a caption cut into
-pieces.
+El formato premia una idea partida en pasos. Castiga un caption cortado en
+pedazos.
 
-## When to use it instead of a Reel
+## Cuándo usarlo en lugar de un Reel
 
-Use a carousel when the idea has **sequence and needs to be re-read**: steps, a
-framework with parts, a before and after, a list worth screenshotting. Use a
-Reel when the idea has motion, a face, or a payoff that has to be seen
-happening.
+Usa un carrusel cuando la idea tiene **secuencia y necesita releerse**: pasos,
+un método con partes, un antes y después, una lista que vale la pena guardar en
+captura. Usa un Reel cuando la idea tiene movimiento, una cara, o un remate que
+hay que ver suceder.
 
-If the idea is one claim, it is neither. Hand it to `/ig-reel` and say so.
+Si la idea es una sola afirmación, no es ninguno de los dos. Pásasela a
+`/ig-reel` y dilo.
 
-## Structure
+## Estructura
 
-6 to 10 slides. The cap is 20 and 20 is almost always a book nobody finishes.
-Under 5 and the swipe never starts.
+De 6 a 10 diapositivas. El tope es 20, y 20 casi siempre es un libro que nadie
+termina. Con menos de 5 el deslizar nunca arranca.
 
 ```
-1         COVER     the hook. 6 words or fewer, at a size that is legible in
-                    the grid at thumbnail. One line of promise under it.
-2         THE STAKE why this matters, in one sentence. This slide is also a
-                    second cover, so it cannot be setup.
-3 to N    ONE IDEA PER SLIDE. A headline of 3 to 7 words, at most 25 words
-                    under it. If a slide needs a paragraph, it is two slides.
-N+1       RECAP     the whole thing as a list. This is the screenshot slide.
-LAST      CTA       one action. Save, comment a keyword, or follow. One.
+1         PORTADA   el gancho. 6 palabras o menos, a un tamaño que se lea en
+                    el grid en miniatura. Una línea de promesa debajo.
+2         LO QUE    por qué importa, en una oración. Esta diapositiva también
+          ESTÁ EN   es una segunda portada, así que no puede ser preámbulo.
+          JUEGO
+3 a N     UNA IDEA POR DIAPOSITIVA. Un título de 3 a 7 palabras y máximo 25
+                    palabras debajo. Si una diapositiva necesita un párrafo,
+                    son dos diapositivas.
+N+1       RESUMEN   todo como lista. Esta es la diapositiva de la captura.
+ÚLTIMA    CTA       una acción. Guardar, comentar una palabra clave o seguir.
+                    Una.
 ```
 
-## Slide copy rules
+## Reglas para el texto de las diapositivas
 
-- **The cover is 80% of the result.** Six words. Big. Nothing on the deck saves
-  a cover nobody swipes.
-- **Design for the grid crop.** The profile grid crops to a portrait rectangle
-  that is taller than it is wide, and the exact ratio has moved more than once.
-  Build at 1080x1350 and keep the cover text well inside the middle, clear of
-  the outer 120 pixels on every side, and the crop stops mattering.
-- **Number the slides** (3/8). Completion goes up when people can see the end.
-- **No slide is a paragraph.** If it cannot be said in 25 words, split it.
-- **The recap slide is the one people screenshot and send.** Sends are the
-  strongest signal you can earn. Make it standalone and readable with no
-  context.
-- **The handle on every slide**, small, bottom corner. Screenshots travel
-  without you.
-- **Alt text on the cover at minimum.** It is read by screen readers and by
-  Instagram.
+- **La portada es el 80% del resultado.** Seis palabras. Grandes. Nada del
+  resto del carrusel salva una portada que nadie desliza.
+- **Diseña para el recorte del grid.** El grid del perfil recorta a un
+  rectángulo vertical, más alto que ancho, y la proporción exacta ya cambió más
+  de una vez. Construye a 1080x1350 y deja el texto de la portada bien adentro
+  del centro, lejos de los 120 píxeles de cada orilla, y el recorte deja de
+  importar.
+- **Numera las diapositivas** (3/8). Más gente llega al final cuando puede ver
+  dónde termina.
+- **Ninguna diapositiva es un párrafo.** Si no se puede decir en 25 palabras,
+  pártela.
+- **La diapositiva de resumen es la que la gente captura y manda.** Los envíos
+  son la señal más fuerte que te puedes ganar. Hazla independiente y que se
+  entienda sin contexto.
+- **Tu @usuario en cada diapositiva**, chiquito, en una esquina de abajo. Las
+  capturas viajan sin ti.
+- **Texto alternativo en la portada, como mínimo.** Lo leen los lectores de
+  pantalla y lo lee Instagram.
+- **Ojo con el largo del español.** El mismo mensaje suele ocupar más palabras
+  en español que en inglés. Si una portada no cabe en seis palabras, recorta la
+  idea, no el tamaño de la letra.
 
-## Building the files
+## Cómo hacer los archivos
 
-Instagram wants 1080x1350 (4:5), JPEG or PNG, up to 20 items. Build it as HTML
-and print each slide:
+Instagram pide 1080x1350 (4:5), JPEG o PNG, hasta 20 elementos. Hazlo en HTML e
+imprime cada diapositiva:
 
 ```bash
-# one <section> per slide, 1080x1350, page-break-after: always
-# then Chrome headless --print-to-pdf, or any HTML-to-image you already use
+# un <section> por diapositiva, 1080x1350, page-break-after: always
+# luego Chrome headless --print-to-pdf, o el convertidor de HTML a imagen que ya uses
 ```
 
-Write the HTML with `width:1080px; height:1350px`, a single accent colour, and
-type no smaller than 32px, because this is read on a phone at a third of its
-real size. If the project has a brand skill or a design system, use it and do
-not invent a palette.
+Escribe el HTML con `width:1080px; height:1350px`, un solo color de acento y
+letra de 32px como mínimo, porque se lee en un celular a un tercio de su tamaño
+real. Pon `<html lang="es">` y una fuente que tenga acentos, ñ, ¿ y ¡. Si el
+proyecto tiene una skill de marca o un sistema de diseño, úsalo y no inventes
+una paleta.
 
-## Output
+## Salida
 
-The slide-by-slide copy first, as a numbered list the user can read in ten
-seconds and edit before anything is rendered. Then the **caption**, which for a
-carousel is Job B in `/ig-caption`: the caption is doing work here, because the
-cover has already used its six words.
+Primero el texto diapositiva por diapositiva, como lista numerada que el
+usuario pueda leer en diez segundos y editar antes de generar nada. Luego el
+**caption**, que en un carrusel es el Trabajo B de `/ig-caption`: aquí el
+caption sí trabaja, porque la portada ya gastó sus seis palabras.
 
-Run both through `/ig-human`. Build the files only after the user approves the
-copy.
+Pasa los dos por `/ig-human`. Genera los archivos solo cuando el usuario
+apruebe el texto.
 
 ```
-CAROUSEL  ·  8 slides
+CARRUSEL  ·  8 diapositivas
 
-1  COVER   THE $18,000 CLAUSE
-           One line I now put in every contract.
-2  STAKE   I approved the work. They asked for the money back nine days later.
-3          WHAT IT SAYS
-           Payment on delivery, not on approval.
+1  PORTADA  LA CLÁUSULA DE $18,000
+            Una línea que ahora va en todos mis contratos.
+2  EN JUEGO Aprobé el trabajo. Nueve días después me pidieron el dinero de vuelta.
+3           QUÉ DICE
+            Pago contra entrega, no contra aprobación.
 ...
-7  RECAP   All four lines, in order.
-8  CTA     Comment CONTRACT and I will send the full clause.
+7  RESUMEN  Las cuatro líneas, en orden.
+8  CTA      Comenta CONTRATO y te mando la cláusula completa.
 
-Caption: Job B, hook in line 1, one ask, 3 tags.
+Caption: Trabajo B, gancho en la línea 1, una petición, 3 hashtags.
 ```
 
-Nothing is uploaded. The user posts it.
+No se sube nada. El usuario lo publica.
