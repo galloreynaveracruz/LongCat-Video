@@ -1,67 +1,73 @@
 # voice.md
 
-Copy this to `~/.claude/instagram/voice.md` and fill it in. Every skill in the
-pack reads it. Ten minutes here is the difference between scripts you shoot and
-scripts you rewrite.
+Copia esto en `~/.claude/instagram/voice.md` y llénalo. Todas las skills del
+pack lo leen. Diez minutos aquí son la diferencia entre guiones que grabas y
+guiones que reescribes.
 
-If you would rather not fill it in by hand, send Claude three of your own reels
-or captions and say "write my voice.md from these". That works better than
-guessing at the answers.
+Si prefieres no llenarlo a mano, mándale a Claude tres de tus reels o captions
+y dile "escribe mi voice.md a partir de estos". Funciona mejor que adivinar
+las respuestas.
 
-This file matters more on Instagram than anywhere else, because you have to say
-the words out loud. A line you would never say is not a draft, it is a retake.
+Este archivo importa más en Instagram que en cualquier otro lado, porque las
+palabras las tienes que decir en voz alta. Una frase que nunca dirías no es un
+borrador, es una toma repetida.
 
 ---
 
-## Who I am
+## Quién soy
 
-- **Name:**
-- **Handle:**
-- **What I do, in one sentence:**
-- **Who I am talking to:** (be specific: "photographers charging under $2,000",
-  not "creatives")
-- **What I sell:**
+- **Nombre:**
+- **Usuario (@):**
+- **A qué me dedico, en una oración:**
+- **A quién le hablo:** (sé concreto: "fotógrafas de bodas que cobran menos de
+  $40,000 por evento", no "creativos")
+- **Qué vendo:**
 
-## What I sound like
+## Cómo sueno
 
-- **Three of my own reels or captions that sound most like me:** (paste them)
-- **On camera I am:** (fast and loud / dry / calm / funny / deadpan)
-- **Words I actually use:**
-- **Words I would never say out loud:**
-- **Do I swear:** (yes / mild / no)
-- **Emoji in captions:** (never / one, rarely / freely)
-- **Face on camera:** (always / sometimes / faceless)
-- **Voiceover or to-camera:**
-- **Pace:** (words per minute, if you have timed yourself reading a script.
-  `beats.py --wpm` uses this. Most people are between 150 and 200.)
+- **Tres de mis reels o captions que más suenan a mí:** (pégalos)
+- **Frente a la cámara soy:** (rápido y con energía / seco / tranquilo /
+  chistoso / serio con humor)
+- **Palabras que sí uso:**
+- **Palabras que nunca diría en voz alta:**
+- **¿Digo groserías?:** (sí / leves / no)
+- **Emojis en los captions:** (nunca / uno, de vez en cuando / sin problema)
+- **Salgo a cámara:** (siempre / a veces / nunca)
+- **Voz en off o hablando a cámara:**
+- **Ritmo:** (palabras por minuto, si te has cronometrado leyendo un guion.
+  `beats.py --wpm` usa este dato.)
+- **Variante de español:** (México / neutro / otro país, y si uso tú, usted
+  o vos)
 
-## My positions
+## Mis posturas
 
-Three to five things I believe that some of my audience does not. These are
-where the good reels come from.
+De tres a cinco cosas que creo y que parte de mi audiencia no. De ahí salen
+los buenos reels.
 
 1.
 2.
 3.
 
-## Off limits
+## Prohibido
 
-- **Topics I do not post about:**
-- **Clients, numbers or names I cannot say publicly:**
-- **Claims I am not allowed to make:** (regulated industry, employer policy, NDA)
+- **Temas de los que no publico:**
+- **Clientes, números o nombres que no puedo decir en público:**
+- **Afirmaciones que no tengo permitido hacer:** (industria regulada, política
+  de mi empresa, acuerdo de confidencialidad)
 
-## Proof I can use
+## Pruebas que puedo usar
 
-Real numbers, outcomes and stories I am happy to put my name on. The skills will
-never invent one, so if this section is empty, every draft comes back with
-`{{your number}}` in it.
+Números reales, resultados e historias que estoy dispuesto a firmar con mi
+nombre. Las skills nunca van a inventar uno, así que si esta sección está
+vacía, cada borrador va a regresar con `{{tu número}}` adentro.
 
 -
 -
 -
 
-## The ask
+## La llamada a la acción
 
-- **My keyword CTA, if I use one:** (one word, sayable, no spaces)
-- **What the keyword sends them:**
-- **Where my link goes:**
+- **Mi palabra clave para comentar, si uso una:** (una palabra, fácil de
+  decir, sin espacios)
+- **Lo que reciben con esa palabra:**
+- **A dónde lleva mi link:**
