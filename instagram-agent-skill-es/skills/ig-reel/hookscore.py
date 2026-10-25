@@ -107,7 +107,7 @@ STAKES = {
     "renuncie", "renuncia", "despedi", "despidieron", "corrieron",
     "borre", "borra", "elimine", "mato", "mata", "matando",
     "reemplazo", "reemplaza", "gratis", "pague", "pagas", "pagando", "cobran",
-    "cobre", "contrate", "ahorre", "ahorra", "primer", "primera", "primeros",
+    "cobre", "contrate", "ahorre", "ahorra", "ahorro", "ahorramos", "primer", "primera", "primeros",
     "prohibido", "ilegal", "peor", "odio", "odie", "desperdicie", "tirando",
     "estafa", "mentira", "mintieron", "mienten", "verdad", "neta", "secreto",
     "oculto", "escondido", "robo", "robaron", "antes", "hasta", "sino",

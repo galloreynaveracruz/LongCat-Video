@@ -78,6 +78,17 @@ python3 skills/ig-human/detect.py antes.txt despues.txt     # compara antes y de
 python3 skills/ig-viral/swipe.py capturados.tsv --out ~/.claude/instagram/swipe.md
 ```
 
+Salida real de `hookscore.py` con cuatro hooks de prueba:
+
+```
+->  87.0 FUERTE  Nadie te dice que tus primeros 30 reels van a fracasar.
+    81.6 FUERTE  Perdí 18 mil pesos por una cláusula que no puse en el contr...
+    51.4 OK      Deja de hacer scroll si quieres crecer en Instagram 🔥
+        descalifica: Abre con "deja de hacer scroll". Pedir atención demuestra que no te la has ganado.
+     4.0 DÉBIL   Hola a todos, hoy les quiero hablar de estrategia de contenido
+        descalifica: Saludo. Nadie entra al feed para que lo saluden.
+```
+
 - **`hookscore.py`** califica el primer enunciado de un Reel en cinco
   propiedades: longitud, algo concreto, algo en juego, la carga al frente y a
   quién le habla. Marca los descalificadores, como abrir con "hola", "en este
