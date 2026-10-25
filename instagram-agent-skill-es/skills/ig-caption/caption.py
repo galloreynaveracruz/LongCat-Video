@@ -58,14 +58,14 @@ EMOJI_RE = re.compile(r"[\U0001F300-\U0001FAFF☀-➿←-⇿️]")
 # Lo "concreto" en español: cifras, montos, porcentajes, números dichos con
 # palabras y nombres propios a media oración. "Una" y "uno" no cuentan porque
 # casi siempre son artículos, no cantidades.
-DIGITS_RE = re.compile(r"\$\s?\d|\d[\d,.]*\s?%?")
+DIGITS_RE = re.compile(r"\$\s?\d|\d[\d,.]*(?:\s?%)?")
 SPOKEN_NUMBERS = (
     "dos tres cuatro cinco seis siete ocho nueve diez once doce trece catorce "
     "quince dieciseis diecisiete dieciocho diecinueve veinte veintiun veintiuno "
     "veintidos veintitres veinticuatro veinticinco treinta cuarenta cincuenta "
     "sesenta setenta ochenta noventa cien ciento doscientos doscientas "
     "trescientos trescientas cuatrocientos quinientos quinientas seiscientos "
-    "setecientos ochocientos novecientos mil millon millones docena media"
+    "setecientos ochocientos novecientos mil millon millones docena"
 ).split()
 SPOKEN_RE = re.compile(r"\b(?:" + "|".join(SPOKEN_NUMBERS) + r")\b")
 CAPITAL_RE = re.compile(r"\b[A-ZÁÉÍÓÚÜÑ][a-záéíóúüñ]{2,}\b")
@@ -95,7 +95,7 @@ def concrete_hits(window):
 # "Comenta CONTRATO" es una palabra clave, "comenta qué opinas" es una pregunta.
 KEYWORD_ASK_RE = re.compile(
     r"(?i:\b(?:coment[aáe]|escrib[ea]|d[eé]ja(?:me)?|pon)\b(?:\s+(?:aqu[ií]|abajo))?"
-    r"(?:\s+(?:la\s+)?palabra)?)\s*[\"«“']?\s*[A-ZÁÉÍÓÚÑ0-9]{2,}\b")
+    r"(?:\s+(?:la\s+)?palabra)?)\s*[\"«“']?\s*[A-ZÁÉÍÓÚÑ][A-ZÁÉÍÓÚÑ0-9]+\b")
 
 ASKS = [
     (re.compile(r"\bescribeme\b|\bmandame\s+(?:un\s+)?(?:dm|md|mensaje|inbox)\b"

@@ -35,7 +35,8 @@ borrador, es una toma repetida.
 - **Salgo a cámara:** (siempre / a veces / nunca)
 - **Voz en off o hablando a cámara:**
 - **Ritmo:** (palabras por minuto, si te has cronometrado leyendo un guion.
-  `beats.py --wpm` usa este dato.)
+  `beats.py --wpm` usa este dato. El original en inglés dice que la mayoría
+  está entre 150 y 200; en español ese rango no está medido, mejor cronométrate.)
 - **Variante de español:** (México / neutro / otro país, y si uso tú, usted
   o vos)
 
