@@ -198,6 +198,14 @@ def pass_lexical(text, lex):
     text = re.sub(r"\.\s*\.+", ".", text)
     text = re.sub(r"([!?])\s*\.", r"\1", text)
     text = text.replace("\x00ELL\x00", "...")
+    # "Más lejos. Sin lugar a dudas, esta..." deja "lejos., esta": la coma
+    # que abría la cláusula borrada sobra. Tras ? o ! la coma sí es válida en
+    # español ("¿Cuánto cobras?, me preguntó"), así que ahí no se toca.
+    text = re.sub(r"(?<!\.)\.[ \t]*,[ \t]*", ". ", text)
+    # Una conjunción que quedó sola ("Guarda este post y etiqueta a..." -> "y.").
+    text = re.sub(r"(?im)(^|[.!?][ \t]+)(?:y|e|o|u|pero|ni)[ \t]*[.!?]+[ \t]*", r"\1", text)
+    text = re.sub(r"[ \t]{2,}", " ", text)
+    text = re.sub(r"(?m)[ \t]+$", "", text)
     text = re.sub(r"(?m)^[ \t]+$", "", text)
     text = re.sub(r"\n{3,}", "\n\n", text)
     # Una raya que se volvió coma, seguida de un conector, deja una oración

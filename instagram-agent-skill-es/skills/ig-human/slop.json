@@ -1332,6 +1332,12 @@
       "fix": "Di la única cosa que de verdad quieres decir. Borra la mitad que prepara."
     },
     {
+      "id": "no-es-x-es-y",
+      "regex": "(?i)\\bno (?:es|son) (?:un|una|el|la|los|las) [^.!?\\n,]{2,40}, (?:es|son) (?:un|una|el|la|los|las)\\b",
+      "name": "\"No es X, es Y\" (contraste de frase hecha)",
+      "fix": "Quita la mitad negada y di la afirmación con un dato propio."
+    },
+    {
       "id": "no-solo-sino",
       "regex": "(?i)\\bno s[oó]lo\\b[^.!?\\n]{2,80}\\bsino (?:tambi[eé]n|que)\\b",
       "name": "\"No solo X, sino también Y\"",
