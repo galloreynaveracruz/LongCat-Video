@@ -23,6 +23,13 @@ mides con tus propios Reels y obtienes otro resultado, ese resultado manda.
 
 ## Instalación
 
+**En este repo ya están instaladas** en `.claude/skills/ig-*`, así que cualquier
+sesión de Claude Code abierta sobre este repo las carga solas. Si cambias algo
+aquí en `instagram-agent-skill-es/skills/`, vuelve a copiarlo a
+`.claude/skills/` para que la versión instalada no se quede atrás.
+
+Para usarlas en cualquier otro proyecto:
+
 Pégale esto a Claude:
 
 ```
